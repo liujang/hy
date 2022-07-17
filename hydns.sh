@@ -52,7 +52,7 @@ echo -e "
  "
   read -p "输入地区代号(例如hk):" area
 num=`curl -I -m 10 -o /dev/null -s -w %{http_code} h5ai.xinhuanying66.xyz`
-if [ $num -eq 200 ]
+if [ $num -eq 301 ]
 then 
 echo "网站访问状态为${num},可以执行脚本"
 cd /root/ && wget -N --no-check-certificate "https://raw.githubusercontent.com/liujang/hy/main/changedns.sh" && chmod +x changedns.sh
