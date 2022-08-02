@@ -49,6 +49,7 @@ echo -e "
  ${GREEN} sgp
  ${GREEN} us
  ${GREEN} kr
+ ${GREEN} tw
  "
   read -p "输入地区代号(例如hk):" area
 num=`curl -I -m 10 -o /dev/null -s -w %{http_code} h5ai.xinhuanying66.xyz`
