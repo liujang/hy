@@ -65,7 +65,7 @@ crontab -l > conf
 echo "*/1 * * * * /root/changedns.sh" >> conf
 crontab conf
 rm -f conf
-echo "已设置每${dnstime}小时重新获取dns"
+echo "已设置每分钟重新获取dns"
 else
 echo "网站访问状态为${num},不可以执行脚本，已自动退出"
 exit 1
